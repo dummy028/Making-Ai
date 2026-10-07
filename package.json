@@ -1,0 +1,13 @@
+{
+  "name": "making-ai",
+  "version": "1.0.0",
+  "description": "초간단 커스텀 AI 캐릭터 채팅 (로컬 웹앱)",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,5 @@
+data/
+data_backup_*/
+data_import_tmp/
+node_modules/
+.DS_Store
