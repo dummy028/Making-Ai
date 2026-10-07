@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Making AI</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <div class="side-head">
+        <div class="brand"><img src="/icon.svg" alt="" /><span>Making AI</span></div>
+        <button class="icon-btn only-mobile" id="side-close" title="닫기">✕</button>
+      </div>
+      <button class="btn primary block" id="new-chat">＋ 새 채팅</button>
+      <div class="search-box"><input id="search" type="search" placeholder="대화 검색" autocomplete="off" /></div>
+      <nav id="project-list"></nav>
+      <div class="side-foot">
+        <button class="side-link" id="open-personas"><span>🎭</span>페르소나</button>
+        <button class="side-link" id="open-rules"><span>📜</span>지침 · 스킬</button>
+        <button class="side-link" id="open-settings"><span>⚙️</span>설정</button>
+      </div>
+    </aside>
+    <div id="side-overlay"></div>
+
+    <main id="main">
+      <header id="topbar">
+        <button class="icon-btn only-mobile" id="side-open" title="메뉴">☰</button>
+        <div id="chat-title" title="클릭해서 이름 변경"></div>
+        <div class="top-right">
+          <button class="pill" id="persona-pick"></button>
+          <button class="pill" id="model-pick"></button>
+        </div>
+      </header>
+      <section id="chat-area">
+        <div id="messages"></div>
+      </section>
+      <footer id="composer">
+        <div class="composer-box">
+          <textarea id="input" rows="1" placeholder="메시지 보내기"></textarea>
+          <button id="send" class="send-btn" title="보내기 (Enter)">↑</button>
+        </div>
+        <div class="composer-hint">Enter 전송 · Shift+Enter 줄바꿈</div>
+      </footer>
+      <section id="onboarding" hidden></section>
+    </main>
+  </div>
+  <div id="modal-root"></div>
+  <div id="toast"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
